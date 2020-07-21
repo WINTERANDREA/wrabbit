@@ -26,6 +26,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `constants`,
+        path: `${__dirname}/src/constants/`,
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
